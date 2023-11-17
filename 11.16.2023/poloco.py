@@ -26,7 +26,7 @@
 # delit=firstnumberepicbattlecalculator/secondnumberepicbattlecalculator
 # print(pluspppp," ",minsuyas," ",umnozit," ", delit)
 
-firstchetotameptvoyou=float(input("asdasd "))
-secondshitpoststatus=float(input("asdaszxc "))
-x=-(secondshitpoststatus/firstchetotameptvoyou)
-print(x)
+#6: firstchetotameptvoyou=float(input("asdasd "))
+# secondshitpoststatus=float(input("asdaszxc "))
+# x=-(secondshitpoststatus/firstchetotameptvoyou)
+# print(x)
