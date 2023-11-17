@@ -51,5 +51,5 @@ minutes_current_time_world_usa_kosovo=int(input("minutes= "))
 dayintheworldhowmuch=23
 minuteshowmuchisit= 60
 dayhours=dayintheworldhowmuch-hours_current_time_world_usa_kosovo
-minutesshit=minuteshowmuchisit-minutes_current_time_world_usa_kosovo
+minutesshit=minuteshowmuchisit-minutes_current_time_world_usa_kosovo // 1
 print(dayhours," часов ", minutesshit, " минут")
