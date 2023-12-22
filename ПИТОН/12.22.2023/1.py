@@ -39,8 +39,9 @@ def get_employee_id(full_name: str) -> int:
     except ValueError:
         return -1
     for man in database:
-        if man["firstName"] + " " + ["lastName"] == full_name:
-            return {"id": database["id"], "errorDesc": ""}
+        if str(man["firstName"]) + " " + str(["lastName"]) == full_name:
+            return man["id"]
+    return {"id": -1, "errorDesc": "No such a person here"}
             
 
 r1 = new_employee("Алексей Шевцов", "1488-05-01", "продавец говна", 184797)
@@ -50,6 +51,7 @@ r4 = new_employee("Lorem Ipsum", "0000-01-01", "черная дыра", 0)
 r5 = new_employee("П П", "1981-04-12", "пистолет пулемет", 123)
 
 id = get_employee_id("Алекесей Шевцов")
+print(id)
 print(r1)
 print(r2)
 print(r3)
