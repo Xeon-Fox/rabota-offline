@@ -7,7 +7,7 @@ def test_get_names():
     print("👍")
 
 def get_names(arg, *args) -> list:
-    if arg == list or tuple:
+    if type(arg) is tuple or type(arg) is list:
         result = []
         for number in arg:
             match number:
@@ -34,9 +34,13 @@ def get_names(arg, *args) -> list:
                 case _:
                     result.append("")
         return result
-    if arg == int:
+    else:
+        array=[]
+        array.append(arg)
+        for i in args:
+            array.append(i)
         result = []
-        for number in args:
+        for number in array:
             match number:
                 case 0:
                     result.append("ноль")
@@ -60,9 +64,7 @@ def get_names(arg, *args) -> list:
                     result.append("девять")
                 case _:
                     result.append("")
-        return result
-        
-
+        return result    
 test_get_names()
     
 
