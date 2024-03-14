@@ -154,19 +154,52 @@
 //     default:
 //         console.log("Неверная операция");
 
-let element = +prompt("kas")
+// let element = +prompt("kas")
 
-switch (typeof element){
-    case "string":
-        console.log("Строка") 
-    break;
-    case "number":
-        console.log("Число") 
-    break;
-    case "boolean":
-        console.log("Булево значение")
-    break;
+// switch (typeof element){
+//     case "string":
+//         console.log("Строка") 
+//     break;
+//     case "number":
+//         console.log("Число") 
+//     break;
+//     case "boolean":
+//         console.log("Булево значение")
+//     break;
+//     default:
+//         console.log("хз")
+//     break;
+// }
+
+
+
+// let num1 = +prompt(" 1  ")
+// let num2 = +prompt("2 ")
+// if(num1>num2){
+//     console.log(num1)
+// }
+// else if(num1<num2){
+//     console.log(num2)
+// }
+
+// let num = +prompt("парарач")
+// if(num % 5 == 0){
+//     console.log("Чапрапр")
+// }
+// else{
+//     console.log("Чимьим 5")
+// }
+
+let planet = prompt("врмстсмтсми ")
+
+switch(planet){
+    case 'Земля':
+        console.log("салам, землянин!")
+    break
+    case 'земля':
+        console.log("салам, землянин!")
+    break
     default:
-        console.log("хз")
+        console.log("салам, инопланетянин!")
     break;
 }
