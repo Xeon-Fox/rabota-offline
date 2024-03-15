@@ -115,7 +115,7 @@
 //             count=0
 //         }
 //     }    
-}
+// }
 
 // let num = prompt("ASd")
 // for (let i = 2; i < num; i++) {
