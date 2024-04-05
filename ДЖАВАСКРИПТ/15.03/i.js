@@ -92,7 +92,7 @@ function calculate(num1, num2, sign){
 
 
 // 4 не надо
-// function ifSimple(num1){
+// function ifSimple(num1){ 
 //     if(){
 //         return "норм"
 //     }
@@ -103,12 +103,15 @@ function calculate(num1, num2, sign){
 
 // console.log(ifSimple(2))
 
-// function returnTable(num1){
-//     for (let i = 2; i <= 9; i++) {
-//         console.log(num1 * i);
-//     }
-// }
+function returnTable(num1){
+    for (let i = 2; i <= 9; i++) {
+        console.log(num1 * i);
+    }
+}
 
-// returnTable(3)
-
+//    
 //6 нет
+
+function sum(num1, num2){
+
+}
