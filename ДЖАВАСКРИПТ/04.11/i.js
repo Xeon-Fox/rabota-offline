@@ -39,8 +39,8 @@
 // })   
 
 window.addEventListener("scroll", function(){
-    let scrolly = this.window.pageYOffset|| document.documentElement.scrolly
-    let layer = this.document.getElementById("layer")
-
-    layer.style.transform = translateY(+scroll*0.5 + "px")
+    let scrolly = window.pageYOffset|| document.documentElement.scrolly
+    let layer = document.querySelector('.layer')
+    console.log(layer)
+    layer.style.transform = 'translateY(' + scrolly * 0.5 + 'px)'
 })
