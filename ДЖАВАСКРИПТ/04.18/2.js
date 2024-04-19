@@ -24,3 +24,4 @@ console.log(mainFormSelectValue)
  
 let mainFormSelectText = mainFormSelect.options[mainFormSelectIndex].text 
 console.log(mainFormSelectText)
+
