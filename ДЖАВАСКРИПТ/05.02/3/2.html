@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+        } 
+        .editor textarea { 
+            width: 300px; 
+            height: 100px; 
+            margin-top: 10px; 
+        }
+        .editor{
+            margin-left: 750px;
+        }
+        #outputText { 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            margin-top: 10px; 
+            width: 300px; 
+            min-height: 100px; 
+        } 
+ 
+        .direction{ 
+            display: flex; 
+            flex-direction: row; 
+        } 
+ 
+        #outputText{ 
+            margin-top: 30px; 
+            width: 290px; 
+            margin-left: 750px;
+        } 
+ 
+        button{ 
+            position: relative; 
+            top: 20px; 
+            right: 310px; 
+            width: 310px; 
+        }
+    </style>
+</head> 
+<body> 
+    <div class="editor"> 
+        <div class="direction"> 
+        <input type="checkbox" id="bold"> <div>Bold</div> 
+        <input type="checkbox" id="italics"> <div>Italics</div> 
+        <input type="radio" name="align" id="left" checked> <div>Left</div> 
+        <input type="radio" name="align" id="right"> <div>Right</div> 
+        </div> 
+        <textarea id="textInput" placeholder="Введите текст..."></textarea> 
+        <button onclick="applyStyles()">Show text</button> 
+    </div> 
+    <div id="outputText"></div> 
+    <script src="2.js"></script> 
+</body> 
+</html>

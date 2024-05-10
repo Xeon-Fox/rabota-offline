@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        .message__form{ 
+            display: flex; 
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 37vw;
+        }
+
+        .message__list{
+            margin-left: 37vw;
+            width: 422px;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+
+        input[type="text"]{ 
+            width: 400px; 
+            margin-top: 5px; 
+            padding: 10px; 
+        } 
+ 
+        .btn{ 
+            width: 425px;
+            background-color: rgb(62, 62, 255);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+ 
+        button{ 
+            padding: 10px 20px; 
+            margin-top: 10px; 
+        }
+
+        .message__container{
+            height: 100px;
+        }
+    </style>
+</head> 
+<body> 
+    <div class="message__list" id="messagesList"></div>
+
+    <div class="message__form"> 
+
+        <div >Ваше имя</div>
+        <input type="text" id="name"> 
+        <div>Ваше сообщение</div> 
+        <input type="text" class="message__container" id="message"></input> 
+        <button class="btn" onclick="addMessage()">Отправить</button> 
+
+    </div>
+
+    <script src="2.js"></script> 
+</body> 
+</html>

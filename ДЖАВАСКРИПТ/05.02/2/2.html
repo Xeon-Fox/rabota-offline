@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            padding: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question__text {
+            font-weight: bold;
+        }
+
+        .answer {
+            margin-bottom: 10px;
+        }
+
+        .answer__input {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="question">
+                <p class="question__text">5-6 или 7 и 8</p>
+
+                <div class="answer">
+                    <input type="radio" id="answer1" name="question1" class="answer__input">
+                    <label for="answer1" class="answer__label">5-6</label>
+                </div>
+
+                <div class="answer">
+                    <input type="radio" id="answer2" name="question1" class="answer__input">
+                    <label for="answer2" class="answer__label">7-8</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="question__text">😎😗😗</p>
+
+                <div class="answer">
+                    <input type="radio" id="answer3" name="question2" class="answer__input">
+                    <label for="answer3" class="answer__label">14</label>
+                </div>
+
+                <div class="answer">
+                    <input type="radio" id="answer4" name="question2" class="answer__input">
+                    <label for="answer4" class="answer__label">88</label>
+                </div>
+            </div>
+
+            <button type="button" class="button" onclick="checkAnswers()">проверить ответы</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+</html>
