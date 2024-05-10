@@ -5,10 +5,15 @@ document.querySelector('#inputbtn').addEventListener('click', () =>{
     request.onload = () =>  {
       let a = JSON.parse(request.response)
       let c = a[0]
+      console.log(a)
       let of = c.name.official
       let population = c.population
       let region = c.subregion
       let flag = c.flags.alt
+      let img = c.flags.png
+      console.log(img);
+      let img1 = document.querySelector('img')
+      img1.src = img
       let p = document.getElementById('info1')
       p.textContent = of
       let p1 = document.getElementById('info2')
@@ -21,20 +26,13 @@ document.querySelector('#inputbtn').addEventListener('click', () =>{
         request.send()
 })
 
-document.querySelector('#mapbtn').addEventListener('click', () => {
-    let text = document.querySelector('#input').value
-    let request = new XMLHttpRequest() 
-    request.open('GET', `https://restcountries.com/v3.1/name/${text}`)
-    request.onload = () =>  {
-        let a = JSON.parse(request.response)
-        let c = a[0]
-        link = c.maps.googleMaps
-        let modal = document.getElementById("modal");
-        let openButton = document.querySelector("#mapbtn");
-        openButton.addEventListener("click", () => {
-            modal.style.display = "block";
-        });
-        document.getElementById("map").src= link;
-    }
-    request.send()
+document.querySelector('#fvbtn').addEventListener('click', () => {
+    let input = document.querySelector('#input'); 
+    let list = document.querySelector('ul'); 
+
+    let text = input.value;
+    let newItem = document.createElement('li'); 
+    newItem.textContent = text; 
+
+    list.appendChild(newItem);
 })
